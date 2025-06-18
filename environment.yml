@@ -1,0 +1,7 @@
+dependencies:
+  - ipykernel
+channels:
+  # - conda-forge
+  - ctc-curated-condaforge-main
+platforms:
+  - linux-64
