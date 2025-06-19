@@ -10,7 +10,7 @@ RUN rm -f /opt/conda/etc/profile.d/mamba.sh
 RUN echo 'envs_dirs: [ ~/.conda ]' >> /opt/conda/.condarc
 
 # XXX Uncomment this out to reproduce the issue:
-#RUN conda install libmamba=2.3.0
+RUN conda install libmamba=2.3.0
 
 RUN conda create -yn conda-lock conda-lock=3.0.3 \
   && conda clean --all -f -y \

@@ -83,7 +83,7 @@ def dist_name_from_url(url: str) -> str:
 
 
 def dist_names_from_env(env_dir: str) -> set[str]:
-    output = subprocess.check_output(["conda", "list", "--json", "-p", env_dir])
+    output = subprocess.check_output(["mamba", "list", "--json", "-p", env_dir])
     data = json.loads(output)
     return {pkg["dist_name"] for pkg in data}
 
