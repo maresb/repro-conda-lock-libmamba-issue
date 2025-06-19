@@ -10,4 +10,5 @@ If you open the `Dockerfile`, then uncomment out the libmamba upgrade:
 ```
 RUN conda install libmamba=2.3.0
 ```
-and re-run the command above, it will fail.
+and re-run the command above, it will fail
+(i.e. exit nonzero due to the `... | grep ...` command in test.sh failing).
